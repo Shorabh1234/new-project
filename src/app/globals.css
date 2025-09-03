@@ -1,26 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --bg-white: #ffffff;
+  --color-navlink: #09090b;
+  --bg-nav: #09090b;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-footerlink: #3e095d;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-md: 16px;
+  --font-sm: 14px;
+
+  --font-medium: 500;
+  --font-bold: 700;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist", sans-serif;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+.color-navlink {
+  color: var(--color-navlink);
+}
+.font-md {
+  font-size: var(--font-md);
+}
+.font-medium {
+  font-weight: var(--font-medium);
+}
+.font-sm {
+  font-size: var(--font-sm);
+}
+.font-bold {
+  font-weight: var(--font-bold);
+}
+.bg-nav {
+  background-color: var(--bg-nav);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-black {
+  color: var(--color-black);
+}
+.color-footerlink {
+  color: var(--color-footerlink);
 }
